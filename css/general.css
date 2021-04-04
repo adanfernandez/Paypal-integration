@@ -119,6 +119,12 @@ footer {
     margin-bottom: 10%;
 }
 
+@media screen and (min-width: 1055px) {
+    #products-main-section {
+        margin-bottom: 20%;
+    }
+}
+
 @media screen and (max-width: 1055px) {
     #products-main-section {
         display: grid;
@@ -127,7 +133,13 @@ footer {
         cursor: pointer;
     }
     .left-side {
-        display: none;
+        float: none;
+        position: relative;
+        width: 50%;
+    }
+    .right-side {
+        width: 75%;
+        float: none;
     }
 }
 
@@ -135,10 +147,25 @@ footer {
     .title-product {
         font-size: 100%;
     }
+    .left-side {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .left-side {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 320px) {
     #products-main-section {
         margin-bottom: 75%;
+    }
+    .left-side {
+        float: none;
+        left: 0%;
+        position: relative;
+        width: 100%;
     }
 }
