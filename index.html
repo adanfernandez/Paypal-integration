@@ -8,79 +8,104 @@
     <title>Master's Degree in Web Engineering - UO251162</title>
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link rel="stylesheet" type="text/css" href="css/styleIndex.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="author" content="Adán Fernández" />
     <meta name="description" content="Online football shop of my favourite teams to practise paypal integration" />
     <meta name="keywords" content="html5, css, miw, web, adan, uo251162, sandbox, paypal" />
 </head>
 
+<body>
+    <header>
+        <label>University of Oviedo - Master's Degree in Web Engineering</label>
+    </header>
 
-<header>
-    <label>
-        University of Oviedo - Master's Degree in Web Engineering
-    </label>
-</header>
+    <aside class="left-side">
+        <section>
+            <h2>Filter by team</h2>
+            <ul>
+                <li><a>Real Oviedo</a></li>
+                <li><a>FC Schalke 04</a></li>
+                <li><a>Spanish national team</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Filter by price (0 €-1000 €)</h2>
+            <input id="range" type="range" min="1" max="1000" value="500">
+        </section>
+        <section>
+            <h2>Filter by valorations</h2>
+            <aside>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </aside>
+            <aside>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </aside>
+            <aside>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </aside>
+            <aside>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </aside>
+            <aside>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </aside>
+        </section>
 
-<nav>
-
-</nav>
-
-<aside class="left-side">
-    <section>
-        <h2>Filter by team</h2>
-        <ul>
-            <li><a>Real Oviedo</a></li>
-            <li><a>FC Schalke 04</a></li>
-            <li><a>Spanish national team</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>Filter by price (0 €-1000 €)</h2>
-        <input id="range" type="range" min="1" max="1000" value="500">
-    </section>
-    <section>
-        <h2>Filter by valorations</h2>
-        <ul>
-            <li><a>Real Oviedo</a></li>
-            <li><a>FC Schalke 04</a></li>
-            <li><a>Spanish national team</a></li>
-        </ul>
-    </section>
-
-</aside>
-
-<main class="right-side">
-    <aside>
-        <h2 id="products">Our products</h2>
-        <label><input type="text" placeholder="Search" id="search" /><i id="logoSearch" class="fa fa-search"></i></label>
     </aside>
-    <aside id="products-main-section">
-        <article class="single-product" id="realoviedo2012">
-            <h2>Real Oviedo - 2012 jersey</h2>
-            <img class="img-product" alt="Real Oviedo shirt of 2012-2013 season" src="img/realoviedo2012.jpg">
-        </article>
-        <article class="single-product" id="fcschalkescarf">
-            <h2>FC Schalke 04 - Scarf</h2>
-            <img class="img-product" alt="FC Schalke 04 scarf" src="img/fcschalkescarf.jpg">
-        </article>
-        <article class="single-product" id="fcschalkeshirt">
-            <h2>FC Schalke 04 - 2011 jersey</h2>
-            <img class="img-product" alt="FC Schalke shirt of 2010-2011 season" src="img/schalkeshirt2011.jpg">
-        </article>
-        <article class="single-product" id="iniesta">
-            <h2>Spain - 2010 Jersey (Iniesta)
-            </h2>
-            <img class="img-product" alt="Iniesta shirt of FIFA World Cup 2010" src="img/iniesta2010.jpg">
-        </article>
-        <article class="single-product" id="realoviedo2009">
-            <h2>Real Oviedo - 2009 jersey</h2>
-            <img class="img-product" alt="Real Oviedo shirt of 2009-2010 season" src="img/realoviedo2009.jpg">
-        </article>
-        <article class="single-product" id="spain2008">
-            <h2>Spain - 2008 jersey</h2>
-            <img class="img-product" alt="Spanish national team shirt of EURO 2008" src="img/spain2008.jpg">
-        </article>
-    </aside>
-</main>
 
+    <main class="right-side">
+        <aside>
+            <h2 id="products">Our products</h2>
+            <label><input type="text" placeholder="Search" id="search" /><i id="logoSearch" class="fa fa-search"></i></label>
+        </aside>
+        <aside id="products-main-section">
+            <article class="single-product" id="realoviedo2012">
+                <h2>Real Oviedo - 2012 jersey</h2>
+                <img class="img-product" alt="Real Oviedo shirt of 2012-2013 season" src="img/realoviedo2012.jpg">
+            </article>
+            <article class="single-product" id="fcschalkescarf">
+                <h2>FC Schalke 04 - Scarf</h2>
+                <img class="img-product" alt="FC Schalke 04 scarf" src="img/fcschalkescarf.jpg">
+            </article>
+            <article class="single-product" id="fcschalkeshirt">
+                <h2>FC Schalke 04 - 2011 jersey</h2>
+                <img class="img-product" alt="FC Schalke shirt of 2010-2011 season" src="img/schalkeshirt2011.jpg">
+            </article>
+            <article class="single-product" id="iniesta">
+                <h2>Spain - 2010 Jersey (Iniesta)
+                </h2>
+                <img class="img-product" alt="Iniesta shirt of FIFA World Cup 2010" src="img/iniesta2010.jpg">
+            </article>
+            <article class="single-product" id="realoviedo2009">
+                <h2>Real Oviedo - 2009 jersey</h2>
+                <img class="img-product" alt="Real Oviedo shirt of 2009-2010 season" src="img/realoviedo2009.jpg">
+            </article>
+            <article class="single-product" id="spain2008">
+                <h2>Spain - 2008 jersey</h2>
+                <img class="img-product" alt="Spanish national team shirt of EURO 2008" src="img/spain2008.jpg">
+            </article>
+        </aside>
+    </main>
+</body>
 
 </html>
