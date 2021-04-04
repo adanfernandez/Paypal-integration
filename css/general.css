@@ -26,7 +26,6 @@ header {
 .left-side {
     float: left;
     width: 25%;
-    position: fixed;
 }
 
 
@@ -36,4 +35,11 @@ https://www.w3schools.com/howto/howto_css_star_rating.asp
 
 .checked {
     color: orange;
+}
+
+#main-picture {
+    width: 100%;
+    background-image: url("../img/mainPicture.jpg");
+    height: 405px;
+    background-position: center;
 }
