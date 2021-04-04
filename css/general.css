@@ -18,6 +18,10 @@ header {
     font-size: 140%;
 }
 
+element {
+    background: transparent url(image.png) no-repeat center;
+}
+
 .right-side {
     float: right;
     width: 75%;
@@ -37,9 +41,9 @@ https://www.w3schools.com/howto/howto_css_star_rating.asp
     color: orange;
 }
 
-#main-picture {
-    width: 100%;
-    background-image: url("../img/mainPicture.jpg");
-    height: 405px;
-    background-position: center;
+.main-section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
