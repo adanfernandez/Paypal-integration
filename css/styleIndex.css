@@ -3,3 +3,7 @@
     width: 200px;
     object-fit: cover;
 }
+
+#products {
+    border-bottom: 8px solid blue ;
+}
