@@ -9,6 +9,7 @@
 #products-main-section {
     display: grid;
     grid-template-columns: 49% 49%;
+    margin-bottom: 10%;
 }
 
 header {
@@ -85,4 +86,22 @@ https://www.w3schools.com/howto/howto_css_star_rating.asp
     background-color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #232f3e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
 }
