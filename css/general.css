@@ -47,3 +47,42 @@ https://www.w3schools.com/howto/howto_css_star_rating.asp
     margin-right: auto;
     width: 90%;
 }
+
+.container {
+    position: relative;
+    width: 75%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
