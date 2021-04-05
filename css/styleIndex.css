@@ -4,10 +4,6 @@
     object-fit: cover;
 }
 
-#products {
-    border-bottom: 8px solid red;
-}
-
 #main-picture {
     width: 100%;
     background-image: url("../img/mainPicture.jpg");
