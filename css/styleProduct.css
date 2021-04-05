@@ -7,7 +7,7 @@
 
 .img-product {
     max-width: 50%;
-    margin: 10% 10% 10% 10%;
+    margin: 15% 15% 15% 20%;
 }
 
 .button {
@@ -64,4 +64,53 @@
 
 .paypal-logo {
     max-width: 10%;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+p {
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 240%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .main-product {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 50%;
+    }
+    .buy {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    .paypal-logo {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img-product {
+        max-width: 60%;
+        margin: 60% 15% 15% 20%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .img-product {
+        max-width: 60%;
+        margin: 30% 15% 15% 20%;
+    }
 }
