@@ -1,3 +1,7 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -176,4 +180,24 @@ footer {
         position: relative;
         width: 100%;
     }
+}
+
+nav>ul {
+    border: 2px solid red;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: flex;
+    color: black;
+    font-weight: 800;
+    padding: 0.4em 0.7em;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
