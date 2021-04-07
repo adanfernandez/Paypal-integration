@@ -4,7 +4,6 @@ $(document).ready(function() {
         var quantity = $("#units").val();
         var finalPrice = initialPrice * quantity;
         $("#finalPrice").text(finalPrice + ".00€");
-        document.getElementById("amount").value = finalPrice;
         document.getElementById("quantity").value = parseFloat($("#units").val());
     });
 });
