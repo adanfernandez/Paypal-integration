@@ -78,7 +78,7 @@ h2 {
     .main-product {
         display: grid;
         grid-template-columns: 100%;
-        margin-bottom: 45%;
+        margin-bottom: 20%;
     }
     .buy {
         display: grid;
@@ -87,16 +87,19 @@ h2 {
     }
 }
 
-@media screen and (max-width: 426spx) {
+@media screen and (max-width: 426px) {
     .main-product {
-        margin-bottom: 30%;
+        margin-bottom: 50%;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .img-product {
         max-width: 60%;
         margin: 60% 15% 15% 20%;
+    }
+    .main-product {
+        margin-bottom: 15%;
     }
 }
 
@@ -130,4 +133,14 @@ select {
 
 .paypal-logo {
     max-width: 20%;
+}
+
+@media screen and (max-width: 2560px) {
+    .img-product {
+        max-width: 60%;
+        margin: 19% 15% 15% 20%;
+    }
+    .main-product {
+        margin-bottom: 15%;
+    }
 }
