@@ -1,9 +1,10 @@
 $(document).ready(function() {
-    $("#amount").change(function() {
-        debugger;
+    $("#units").change(function() {
         var initialPrice = 62.00;
-        var amount = $("#amount").val();
-        var finalPrice = initialPrice * amount;
+        var quantity = $("#units").val();
+        var finalPrice = initialPrice * quantity;
         $("#finalPrice").text(finalPrice + ".00€");
+        document.getElementById("amount").value = finalPrice;
+        document.getElementById("quantity").value = parseFloat($("#units").val());
     });
 });
